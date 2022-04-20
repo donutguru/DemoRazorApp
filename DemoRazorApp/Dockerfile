@@ -6,9 +6,9 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["DemoRazorApp/DemoRazorApp.csproj", "DemoRazorApp/"]
+COPY ["DemoRazorApp.csproj", "DemoRazorApp/"]
 RUN dotnet restore "DemoRazorApp/DemoRazorApp.csproj"
-COPY . .
+COPY . DemoRazorApp
 WORKDIR "/src/DemoRazorApp"
 RUN dotnet build "DemoRazorApp.csproj" -c Release -o /app/build
 
