@@ -8,7 +8,7 @@ namespace DemoRazorApp.Test
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.AreEqual(true, true);
+            Assert.AreEqual(true, false);
         }
     }
 }
