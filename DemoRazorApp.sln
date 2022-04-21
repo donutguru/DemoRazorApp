@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoRazorApp", "DemoRazorApp\DemoRazorApp.csproj", "{D194C34C-561F-49D2-8729-427227AE092C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoRazorApp", "DemoRazorApp\DemoRazorApp.csproj", "{D194C34C-561F-49D2-8729-427227AE092C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoRazorApp.Test", "DemoRazorApp.Test\DemoRazorApp.Test.csproj", "{4FB845E6-6C91-4873-8B5D-7419F6D4AC77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoRazorApp.Test", "DemoRazorApp.Test\DemoRazorApp.Test.csproj", "{4FB845E6-6C91-4873-8B5D-7419F6D4AC77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SupportFeatures", "SupportFeatures", "{CB4850DC-B799-42A1-84C2-7FED48327E99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

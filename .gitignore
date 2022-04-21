@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Ignore Screenshots and videos from Cypress tests
+E2E/cypress/screenshots
+E2E/cypress/videos

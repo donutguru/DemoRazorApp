@@ -1,0 +1,18 @@
+version: '2.0'
+services:
+  demo-app:
+    build: 
+      dockerfile: ../DemoRazorApp/Dockerfile.tc
+      context: ../DemoRazorApp
+    ports: 
+     - "8999:80"
+  
+  cypress:
+    image: cypress/included:3.4.0
+    depends_on:
+      - demo-app
+    environment:
+      - CYPRESS_baseUrl=http://demo-app
+    working_dir: /e2e
+    volumes:
+      - ./:/e2e

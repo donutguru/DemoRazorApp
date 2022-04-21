@@ -1,0 +1,6 @@
+{
+    "pageLoadTimeout": 120000,
+    "chromeWebSecurity": false,
+    "retries": 3,
+    "baseUrl": "http://localhost:5021"
+}
