@@ -8,6 +8,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoRazorApp.Test", "DemoRazorApp.Test\DemoRazorApp.Test.csproj", "{4FB845E6-6C91-4873-8B5D-7419F6D4AC77}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SupportFeatures", "SupportFeatures", "{CB4850DC-B799-42A1-84C2-7FED48327E99}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
