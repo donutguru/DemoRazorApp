@@ -8,7 +8,7 @@ COPY . .
 RUN dotnet restore "DemoRazorApp/DemoRazorApp.csproj"
 
 WORKDIR /src
-RUN dotnet test --logger:trx
+RUN dotnet test
 
 WORKDIR "/src/DemoRazorApp"
 RUN dotnet build "DemoRazorApp.csproj" -c Release -o /app/build
