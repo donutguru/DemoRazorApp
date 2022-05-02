@@ -6,12 +6,12 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY . .
 RUN dotnet restore "DemoRazorApp/DemoRazorApp.csproj"
-COPY . DemoRazorApp
-WORKDIR "/src/DemoRazorApp"
-RUN dotnet build "DemoRazorApp.csproj" -c Release -o /app/build
 
 WORKDIR /src
 RUN dotnet test --logger:trx
+
+WORKDIR "/src/DemoRazorApp"
+RUN dotnet build "DemoRazorApp.csproj" -c Release -o /app/build
 
 FROM build AS publish
 RUN dotnet publish "DemoRazorApp.csproj" -c Release -o /app/publish
