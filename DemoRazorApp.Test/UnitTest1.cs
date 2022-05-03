@@ -12,11 +12,11 @@ namespace DemoRazorApp.Test
             //Assert.AreEqual(true, false);
         }
 
-        [TestMethod]
-        public void MyTestThatFails()
-        {
-            //Assert.AreEqual(true, true);
-            Assert.AreEqual(true, false);
-        }
+        //[TestMethod]
+        //public void MyTestThatFails()
+        //{
+        //    //Assert.AreEqual(true, true);
+        //    Assert.AreEqual(true, false);
+        //}
     }
 }
