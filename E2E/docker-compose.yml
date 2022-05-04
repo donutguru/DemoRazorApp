@@ -1,9 +1,10 @@
 version: '2.0'
 services:
   demo-app:
-    build: 
-      dockerfile: ../DemoRazorApp/Dockerfile.tc
-      context: ../DemoRazorApp
+    # build: 
+    #   dockerfile: ../DemoRazorApp/Dockerfile.tc
+    #   context: ../DemoRazorApp
+    image: my-razor-app:${razor_app_version}
     ports: 
      - "8999:80"
   
