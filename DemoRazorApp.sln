@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SupportFeatures", "SupportFeatures", "{CB4850DC-B799-42A1-84C2-7FED48327E99}"
 	ProjectSection(SolutionItems) = preProject
 		Dockerfile = Dockerfile
+		version.txt = version.txt
 	EndProjectSection
 EndProject
 Global
